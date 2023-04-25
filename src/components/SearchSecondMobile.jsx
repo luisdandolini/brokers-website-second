@@ -3,6 +3,7 @@ import Accordion from './Accordion';
 import Icon from '@mdi/react';
 import { mdiMapMarker, mdiSwapVertical, mdiCurrencyUsd, mdiMagnify } from '@mdi/js';
 import { useState, useEffect } from 'react';
+import Logo from '../assets/logosort.png';
 
 export default function SearchSecondMobile() {
   const [index, setIndex] = useState(0);
@@ -45,6 +46,9 @@ export default function SearchSecondMobile() {
 
   return(
     <div className={styles.bg}>
+      <div className={styles.bg_logo}>
+        <img src={Logo} alt="" />
+      </div>
       <span className={styles.icon_location}>
         <Icon path={mdiMapMarker} size={.9} color={'#1919bf'}/>
       </span>
