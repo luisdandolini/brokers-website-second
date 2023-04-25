@@ -3,10 +3,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from 'swiper';
+import { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import SearchSecondMobile from './SearchSecondMobile';
+import HeaderSecond from './HeaderSecond';
 
 const HighlightsSecond = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
+
+  useEffect(() => {
+    setIsMobile(isMobileQuery);
+  }, [isMobileQuery]);
+ 
   return(
     <section>
+      {isMobile ? <SearchSecondMobile /> : <HeaderSecond /> }
+
       <h1 className={styles.title}>Destaques</h1>
 
       <div className={styles.container_carousel}>
@@ -113,7 +126,6 @@ const HighlightsSecond = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-
         <div className={styles.container_button}>
           <button>Ver todos os imóveis</button>
         </div>

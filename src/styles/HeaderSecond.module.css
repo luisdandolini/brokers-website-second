@@ -28,6 +28,10 @@
   margin-top: 8rem;
 }
 
+.none {
+  display: none;
+}
+
 @media(max-width: 759px) {
   .title h1 {
     font-size: 1.5rem;
