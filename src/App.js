@@ -11,11 +11,11 @@ function App() {
       <main>
         {/* HOME */}
 
-        <HighlightsSecond />
-        <AboutSecond />
+        {/* <HighlightsSecond />
+        <AboutSecond /> */}
 
         {/* PÁGINA DE TODOS OS IMÓVEIS */}
-        {/* <ImobilesSecond /> */}
+        <ImobilesSecond />
 
         {/* PÁGINA DO IMÓVEL */}
         {/* <ImobileSecond /> */}

@@ -159,7 +159,7 @@ export default function SearchSecondMobile() {
       <span className={styles.icon_dollar}>
         <Icon path={mdiCurrencyUsd} size={.9} color={'#1919bf'} />
       </span>
-      <Accordion title='Valor aproximado?' 
+      <Accordion title='Valor aproximado' 
         content={
           <div className={styles.container_input}>
             <div className="checkbox-wrapper-19">

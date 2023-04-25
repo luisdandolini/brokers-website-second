@@ -110,9 +110,9 @@ const ImobileSecond = () => {
                 <div className={styles.immobile_config}>
                   <p className={styles.immobile_name}>Apartamento Falcon Tower no centro de Balneário Camboriú com 3 suítes</p>
                   <div className={styles.immobile_options}>
-                    <span>3 suítes</span>
-                    <span>3 vagas</span>
-                    <span>152m</span>
+                    <span className={styles.container_icons}><Icon path={mdiBedKingOutline} size={.9} /> 3 suítes</span>
+                    <span className={styles.container_icons}><Icon path={mdiCarBack} size={.9} /> 3 vagas</span>
+                    <span className={styles.container_icons}><Icon path={mdiRulerSquare} size={.9} /> 152m</span>
                   </div>
                   <div>
                     <span className={styles.immobile_price}>R$4.000.000,00</span>
@@ -132,9 +132,9 @@ const ImobileSecond = () => {
                 <div className={styles.immobile_config}>
                   <p className={styles.immobile_name}>Apartamento Falcon Tower no centro de Balneário Camboriú com 3 suítes</p>
                   <div className={styles.immobile_options}>
-                    <span>3 suítes</span>
-                    <span>3 vagas</span>
-                    <span>152m</span>
+                    <span className={styles.container_icons}><Icon path={mdiBedKingOutline} size={.9} /> 3 suítes</span>
+                    <span className={styles.container_icons}><Icon path={mdiCarBack} size={.9} /> 3 vagas</span>
+                    <span className={styles.container_icons}><Icon path={mdiRulerSquare} size={.9} /> 152m</span>
                   </div>
                   <div>
                     <span className={styles.immobile_price}>R$4.000.000,00</span>
@@ -154,9 +154,9 @@ const ImobileSecond = () => {
                 <div className={styles.immobile_config}>
                   <p className={styles.immobile_name}>Apartamento Falcon Tower no centro de Balneário Camboriú com 3 suítes</p>
                   <div className={styles.immobile_options}>
-                    <span>3 suítes</span>
-                    <span>3 vagas</span>
-                    <span>152m</span>
+                    <span className={styles.container_icons}><Icon path={mdiBedKingOutline} size={.9} /> 3 suítes</span>
+                    <span className={styles.container_icons}><Icon path={mdiCarBack} size={.9} /> 3 vagas</span>
+                    <span className={styles.container_icons}><Icon path={mdiRulerSquare} size={.9} /> 152m</span>
                   </div>
                   <div>
                     <span className={styles.immobile_price}>R$4.000.000,00</span>
@@ -176,9 +176,9 @@ const ImobileSecond = () => {
                 <div className={styles.immobile_config}>
                   <p className={styles.immobile_name}>Apartamento Falcon Tower no centro de Balneário Camboriú com 3 suítes</p>
                   <div className={styles.immobile_options}>
-                    <span>3 suítes</span>
-                    <span>3 vagas</span>
-                    <span>152m</span>
+                    <span className={styles.container_icons}><Icon path={mdiBedKingOutline} size={.9} /> 3 suítes</span>
+                    <span className={styles.container_icons}><Icon path={mdiCarBack} size={.9} /> 3 vagas</span>
+                    <span className={styles.container_icons}><Icon path={mdiRulerSquare} size={.9} /> 152m</span>
                   </div>
                   <div>
                     <span className={styles.immobile_price}>R$4.000.000,00</span>

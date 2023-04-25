@@ -15,7 +15,6 @@
 
 .immobile {
   max-width: 350px;
-  border: 1px solid gray;
   border-radius: .5rem;
   background-color: #f6f6f6;
 }
@@ -116,6 +115,12 @@
   border: 1px solid #1919bf;
 }
 
+.container_icons {
+  display: flex;
+  align-items: center;
+  gap: .2rem;
+}
+
 @media(max-width: 759px) {
   .title {
     text-align: center;
@@ -136,6 +141,7 @@
   .immobile_options {
     margin-bottom: .5rem;
     font-size: .8rem;
+    gap: 1.2rem;
   }
   .immobile_view {
     display: flex;

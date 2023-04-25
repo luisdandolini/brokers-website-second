@@ -138,7 +138,7 @@ export default function SearchSecond() {
         </div>
         <div onMouseLeave={handleMouseLeaveLocation}>
           <button onClick={handleButtonValue} className={styles.options_button}>
-          <span><Icon path={mdiCurrencyUsd} size={.9} color={'#1919bf'}/></span> Valor aproximado 
+          <span><Icon path={mdiCurrencyUsd} size={.9} color={'#1919bf'}/></span> Valor aproximado
           </button>
           {showValue && (
             <div className={styles.options_container}>
