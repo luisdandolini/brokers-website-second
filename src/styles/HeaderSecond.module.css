@@ -1,0 +1,29 @@
+.bg {
+  background-image: url('../assets/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.bg_logo {
+  background-color: #FFF;
+  opacity: .7;
+}
+
+.bg_logo img {
+  width: 150px;
+  padding: 1rem 0 1rem 4rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 8rem;
+}
