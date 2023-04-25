@@ -7,12 +7,14 @@
   left: 50%;
   top: 370px;
   transform: translate(-50%, -50%);
+  z-index:999;
 }
 
 .options_button {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: .5rem;
   width: 240px;
   height: 56px;
   border: none;
@@ -21,6 +23,12 @@
   cursor: pointer;
   font-size: .9rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.options_button span {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 
 .options_container {
@@ -33,6 +41,7 @@
   padding: 1rem;
   border-radius: 0 0 .5rem .5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 594 !important;
 }
 
 .container_search input {

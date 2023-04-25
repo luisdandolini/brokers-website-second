@@ -2,8 +2,7 @@ import styles from '../styles/SearchSecond.module.css';
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Icon from '@mdi/react';
-import { mdiMapMarker } from '@mdi/js';
-import { mdiSwapVertical } from '@mdi/js';
+import { mdiHomeCity, mdiCarBack, mdiBedKingOutline } from '@mdi/js';
 import { mdiCurrencyUsd } from '@mdi/js';
 import { mdiMagnify } from '@mdi/js';
 import SearchSecondMobile from './SearchSecondMobile';
@@ -70,60 +69,69 @@ export default function SearchSecond() {
       <div className={styles.container_inputs}>
         <div onMouseLeave={handleMouseLeaveLocation}>
           <button onClick={handleButtonLocation} className={`${styles.options_button}  ${showOptionsLocation ? styles.first : styles.first_active}`}>
-            <span><Icon path={mdiMapMarker} size={.9} color={'#1919bf'}/></span> Qual a localização?
+            <span><Icon path={mdiHomeCity} size={.9} color={'#1919bf'}/></span> Categoria
           </button>
           {showOptionsLocation && (
-            <div className={styles.options_container}>
-              <label>
-                <input type="checkbox" /> Opção 1
-              </label>
-              <label>
-                <input type="checkbox" /> Opção 2
-              </label>
-              <label>
-                <input type="checkbox" /> Opção 3
-              </label>
-            </div>
-          )}
-        </div>
-        <div onMouseLeave={handleMouseLeaveLocation}>
-          <button onClick={handleButtonType} className={styles.options_button}>
-            Tipo do imóvel <span><Icon path={mdiSwapVertical} size={.9} color={'#1919bf'}/></span>
-          </button>
-          {showOptionsType && (
             <div className={styles.options_container}>
               <label>
                 <input type="checkbox" /> Apartamento
               </label>
               <label>
-                <input type="checkbox" /> Terreno
-              </label>
-              <label>
                 <input type="checkbox" /> Casa
               </label>
               <label>
-                <input type="checkbox" /> Sala Comercial
+                <input type="checkbox" /> Comercial
+              </label>
+              <label>
+                <input type="checkbox" /> Outros
+              </label>
+            </div>
+          )}
+        </div>
+        <div onMouseLeave={handleMouseLeaveLocation}>
+          <button onClick={handleButtonType} className={styles.options_button}> 
+            <span><Icon path={mdiCarBack} size={.9} color={'#1919bf'}/>Vagas</span> 
+          </button>
+          {showOptionsType && (
+            <div className={styles.options_container}>
+              <label>
+                <input type="checkbox" /> 1
+              </label>
+              <label>
+                <input type="checkbox" /> 2
+              </label>
+              <label>
+                <input type="checkbox" /> 3
+              </label>
+              <label>
+                <input type="checkbox" /> 4
+              </label>
+              <label>
+                <input type="checkbox" /> 5+
               </label>
             </div>
           )}
         </div>
         <div onMouseLeave={handleMouseLeaveLocation}>
           <button onClick={handleButtonStatus} className={styles.options_button}>
-            Status do imóvel <span><Icon path={mdiSwapVertical} size={.9} color={'#1919bf'}/></span>
+            <span><Icon path={mdiBedKingOutline} size={.9} color={'#1919bf'}/> Quartos </span> 
           </button>
           {showOptionsStatus && (
             <div className={styles.options_container}>
               <label>
-                <input className={styles.input} type="checkbox" /> Na Planta
+                <input className={styles.input} type="checkbox" /> 1
               </label>
               <label>
-                <input type="checkbox" /> Mobiliado
+                <input type="checkbox" /> 2
               </label>
               <label>
-                <input type="checkbox" /> Sem mobília
+                <input type="checkbox" /> 3
               </label>
               <label>
-                <input type="checkbox" /> Todos
+                <input type="checkbox" /> 4
+              </label>
+              <label>
+                <input type="checkbox" /> +5
               </label>
             </div>
           )}

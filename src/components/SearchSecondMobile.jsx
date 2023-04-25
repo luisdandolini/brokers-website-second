@@ -1,7 +1,7 @@
 import styles from '../styles/SearchSecondMobile.module.css';
 import Accordion from './Accordion';
 import Icon from '@mdi/react';
-import { mdiMapMarker, mdiSwapVertical, mdiCurrencyUsd, mdiMagnify } from '@mdi/js';
+import { mdiHomeCity, mdiBedKingOutline, mdiCurrencyUsd, mdiMagnify, mdiCarBack } from '@mdi/js';
 import { useState, useEffect } from 'react';
 import Logo from '../assets/logosort.png';
 
@@ -50,41 +50,31 @@ export default function SearchSecondMobile() {
         <img src={Logo} alt="" />
       </div>
       <span className={styles.icon_location}>
-        <Icon path={mdiMapMarker} size={.9} color={'#1919bf'}/>
+        <Icon path={mdiHomeCity} size={.9} color={'#1919bf'}/>
       </span>
       <Accordion 
-        title='Qual a localização?' 
+        title='Categoria' 
         content={
           <div className={styles.container_input}>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="balneario" /> 
-              <label htmlFor='balneario' className="check-box" />
-              <span id='camboriu'>Bal. Camboriú</span> 
+              <input type="checkbox" id="apartamento" /> 
+              <label htmlFor='apartamento' className="check-box" />
+              <span id='apartamento'>Apartamento</span> 
             </div>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="bombinhas" /> 
-              <label htmlFor='bombinhas' className="check-box" />
-              Bombinhas
+              <input type="checkbox" id="casa" /> 
+              <label htmlFor='casa' className="check-box" />
+              Casa
             </div>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="camboriu" /> 
-              <label htmlFor="camboriu" className="check-box" />
-              Camboriú
+              <input type="checkbox" id="comercial" /> 
+              <label htmlFor="comercial" className="check-box" />
+              Comercial
             </div>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="itajai" /> 
-              <label htmlFor="itajai" className="check-box" />
-              Itajaí 
-            </div>
-            <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="itapema" /> 
-              <label htmlFor="itapema" className="check-box" />
-              Itapema
-            </div>
-            <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="porto-belo" /> 
-              <label htmlFor="porto-belo" className="check-box" />
-              Porto Belo
+              <input type="checkbox" id="outros" /> 
+              <label htmlFor="outros" className="check-box" />
+              Outros 
             </div>
           </div>
         }
@@ -93,30 +83,35 @@ export default function SearchSecondMobile() {
         accordionContent={customAccordionContent}
       />
       <span className={styles.icon_firstArrow}>
-        <Icon path={mdiSwapVertical} size={1} color={'#1919bf'}/>
+        <Icon path={mdiCarBack} size={1} color={'#1919bf'}/>
       </span>
-      <Accordion title='Tipo do imóvel' 
+      <Accordion title='Vagas' 
         content={
           <div className={styles.container_input}>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="cbtest-19" /> 
-              <label htmlFor="cbtest-19" className="check-box" />
-              Apartamento
+              <input type="checkbox" id="one" /> 
+              <label htmlFor="one" className="check-box" />
+              1
             </div>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="cbtest-19" /> 
-              <label htmlFor="cbtest-19" className="check-box" />
-              Terreno
+              <input type="checkbox" id="two" /> 
+              <label htmlFor="two" className="check-box" />
+              2
             </div>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="cbtest-19" /> 
-              <label htmlFor="cbtest-19" className="check-box" />
-              Casa
+              <input type="checkbox" id="three" /> 
+              <label htmlFor="three" className="check-box" />
+              3
             </div>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="cbtest-19" /> 
-              <label htmlFor="cbtest-19" className="check-box" />
-              Sala Comercial
+              <input type="checkbox" id="four" /> 
+              <label htmlFor="four" className="check-box" />
+              4
+            </div>
+            <div className="checkbox-wrapper-19">
+              <input type="checkbox" id="five" /> 
+              <label htmlFor="five" className="check-box" />
+              5+
             </div>
           </div>
         }
@@ -125,30 +120,35 @@ export default function SearchSecondMobile() {
         accordionContent={customAccordionContent}
       />
       <span className={styles.icon_secondArrow}>
-        <Icon path={mdiSwapVertical} size={1} color={'#1919bf'} />
+        <Icon path={mdiBedKingOutline} size={1} color={'#1919bf'} />
       </span>
-      <Accordion title='Status do imóvel' 
+      <Accordion title='Quartos' 
         content={
           <div className={styles.container_input}>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="planta" /> 
-              <label htmlFor="planta" className="check-box" />
-              Na Planta
+              <input type="checkbox" id="one" /> 
+              <label htmlFor="one" className="check-box" />
+              1
             </div>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="mobiliado" /> 
-              <label htmlFor="mobiliado" className="check-box" />
-              Mobiliado
+              <input type="checkbox" id="two" /> 
+              <label htmlFor="two" className="check-box" />
+              2
             </div>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="sem-mobilia" /> 
-              <label htmlFor="sem-mobilia" className="check-box" />
-              Sem mobília
+              <input type="checkbox" id="three" /> 
+              <label htmlFor="three" className="check-box" />
+              3
             </div>
             <div className="checkbox-wrapper-19">
-              <input type="checkbox" id="todos" /> 
-              <label htmlFor="todos" className="check-box" />
-              Todos
+              <input type="checkbox" id="four" /> 
+              <label htmlFor="four" className="check-box" />
+              4
+            </div>
+            <div className="checkbox-wrapper-19">
+              <input type="checkbox" id="five" /> 
+              <label htmlFor="five" className="check-box" />
+              5+
             </div>
           </div>
         }
