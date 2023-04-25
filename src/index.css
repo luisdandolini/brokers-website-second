@@ -5,3 +5,28 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+/* SWIPER */
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  font-size: 1.5rem !important;
+  color: gray;
+}
+
+.swiper-button-next {
+  right: -6px !important;
+}
+
+.swiper-button-prev {
+  left: -6px !important;
+}
+
+@media(max-width: 759px) {
+  .swiper-button-next {
+    right: 4px !important;
+  }
+  
+  .swiper-button-prev {
+    left: 4px !important;
+  }
+}

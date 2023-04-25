@@ -1,0 +1,145 @@
+.title {
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.immobile {
+  max-width: 350px;
+  border: 1px solid gray;
+  border-radius: .5rem;
+  background-color: #f6f6f6;
+}
+
+.bg {
+  background-image: url('../assets/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 350px;
+  height: 200px;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.immobile_config {
+  padding: 1rem;
+}
+
+.immobile_name {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.immobile_options {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: .9rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.immobile_price {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #1919bf;
+}
+
+.immobile_view {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: .5rem;
+}
+
+.details::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 180px;
+  background-color: #c6c4c4;
+}
+
+.immobile_view p {
+  background-color: #1919bf;
+  color: #FFF;
+  font-size: .8rem;
+  padding: .2rem .8rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.immobile_view p:hover {
+  background-color: #FFF;
+  color: #1919bf;
+  transition: .5s;
+}
+
+.container_carousel {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 3rem;
+  cursor: pointer;
+}
+
+.container_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.container_button button {
+  background-color: #1919bf;
+  color: #FFF;
+  border: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: .5rem 3rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.container_button button:hover {
+  background-color: #FFF;
+  color: #1919bf;
+  border: 1px solid #1919bf;
+}
+
+@media(max-width: 759px) {
+  .title {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .immobile {
+    max-width: 300px;
+  }
+  .details::after {
+    width: 130px;
+  }
+  .immobile_name {
+    margin-bottom: .5rem;
+    font-size: .8rem;
+  }
+  .immobile_options {
+    margin-bottom: .5rem;
+    font-size: .8rem;
+  }
+  .immobile_view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

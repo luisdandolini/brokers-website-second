@@ -1,0 +1,42 @@
+.bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url('../assets/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.about img {
+  width: 140px;
+  border-radius: .5rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1919bf;
+}
+
+.text {
+  font-size: .9rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.container {
+  background-color: #FFF;
+  border-radius: .5rem;
+  margin: 1rem;
+}

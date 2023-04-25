@@ -1,17 +1,17 @@
 import styles from '../styles/SearchSecond.module.css';
 import { useState, useEffect } from 'react';
-// import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 import Icon from '@mdi/react';
 import { mdiMapMarker } from '@mdi/js';
 import { mdiSwapVertical } from '@mdi/js';
 import { mdiCurrencyUsd } from '@mdi/js';
 import { mdiMagnify } from '@mdi/js';
-// import SearchMobile from './SearchMobile';
+import SearchSecondMobile from './SearchSecondMobile';
 
 
-export default function Search() {
-  // const [isMobile, setIsMobile] = useState(false);
-  // const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
+export default function SearchSecond() {
+  const [isMobile, setIsMobile] = useState(false);
+  const isMobileQuery = useMediaQuery({ query: `(max-width: 767px)` });
   const [showOptionsLocation, setShowOptions] = useState(false);
   const [showOptionsType, setShowOptionsType] = useState(false);
   const [showOptionsStatus, setShowOptionsStatus] = useState(false);
@@ -58,13 +58,13 @@ export default function Search() {
     return () => clearTimeout(timeout);
   }, [index, words.length]);
 
-  // useEffect(() => {
-  //   setIsMobile(isMobileQuery);
-  // }, [isMobileQuery]);
+  useEffect(() => {
+    setIsMobile(isMobileQuery);
+  }, [isMobileQuery]);
 
-  // if (isMobile) {
-  //   return <SearchMobile />;
-  // }
+  if (isMobile) {
+    return <SearchSecondMobile />;
+  }
 
   return(
       <div className={styles.container_inputs}>

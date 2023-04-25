@@ -1,0 +1,53 @@
+.bg {
+  background-color: rgb(46, 46, 46);
+}
+
+.logo {
+  width: 70px;
+}
+
+.container_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem  1rem 6rem 1rem;
+  text-align: right;
+}
+
+.info {
+  color: #FFF;
+  font-weight: 500;
+}
+
+.address {
+  margin-top: 1rem;
+}
+
+.nets {
+  display: flex;
+  gap: .5rem;
+  justify-content: flex-end;
+  margin-top: .5rem;
+}
+
+.logo_fast {
+  width: 100px;
+}
+
+.fast {
+  padding: 2rem 0 2rem 2rem;
+}
+
+.fast p {
+  margin-bottom: .5rem;
+  font-size: .7rem;
+}
+
+@media(min-width: 1200px) {
+  .container_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+  }
+}
