@@ -15,10 +15,10 @@ function App() {
         <AboutSecond /> */}
 
         {/* PÁGINA DE TODOS OS IMÓVEIS */}
-        <ImobilesSecond />
+        {/* <ImobilesSecond /> */}
 
         {/* PÁGINA DO IMÓVEL */}
-        {/* <ImobileSecond /> */}
+        <ImobileSecond />
       </main>
       <FooterSecond />
     </>

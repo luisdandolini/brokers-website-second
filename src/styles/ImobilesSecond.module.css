@@ -79,6 +79,7 @@
 .immobile_view p:hover {
   background-color: #FFF;
   color: #1919bf;
+  border: 1px solid #1919bf;
   transition: .5s;
 }
 

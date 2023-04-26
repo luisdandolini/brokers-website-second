@@ -81,6 +81,13 @@
   border-radius: .5rem;
   border: none;
   position: relative;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #FFF;
+  color: #1919bf;
+  border: 2px solid #1919bf;
 }
 
 .input_text input::placeholder {
@@ -89,6 +96,15 @@
   font-size: 0.9rem;
   background-color: #FFF;
   border: none;
+}
+
+.input_value_option {
+  border: none;
+}
+
+.input_value_option::placeholder {
+  color: #000;
+  height: 38px;
 }
 
 /* EFEITO */
@@ -114,6 +130,7 @@
   white-space: nowrap;
   animation: typing 3s steps(50, end) infinite alternate;
   border: none;
+  height: 38px;
 }
 
 @keyframes typing {
@@ -127,4 +144,5 @@
 
 .pause_animation {
   animation-play-state: paused;
+  width: 170px !important;
 }

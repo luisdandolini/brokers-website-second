@@ -14,7 +14,6 @@ export default function SearchSecond() {
   const [showOptionsLocation, setShowOptions] = useState(false);
   const [showOptionsType, setShowOptionsType] = useState(false);
   const [showOptionsStatus, setShowOptionsStatus] = useState(false);
-  const [showValue, setsShowValue]= useState(false);
   const [index, setIndex] = useState(0);
   const words = ['Digite o nome do empreendimento', 'Buscar por código do imóvel'];
   const [typing, setTyping] = useState(false);
@@ -39,15 +38,10 @@ export default function SearchSecond() {
     setShowOptionsStatus(!showOptionsStatus);
   };
 
-  const handleButtonValue = () => {
-    setsShowValue(!showValue);
-  };
-
   const handleMouseLeaveLocation = () => {
     setShowOptions(false);
     setShowOptionsType(false);
     setShowOptionsStatus(false);
-    setsShowValue(false);
   };
 
   useEffect(() => {
@@ -95,19 +89,19 @@ export default function SearchSecond() {
           {showOptionsType && (
             <div className={styles.options_container}>
               <label>
-                <input type="checkbox" /> 1
+                <input type="checkbox" /> 1 vaga
               </label>
               <label>
-                <input type="checkbox" /> 2
+                <input type="checkbox" /> 2 vagas
               </label>
               <label>
-                <input type="checkbox" /> 3
+                <input type="checkbox" /> 3 vagas
               </label>
               <label>
-                <input type="checkbox" /> 4
+                <input type="checkbox" /> 4 vagas
               </label>
               <label>
-                <input type="checkbox" /> 5+
+                <input type="checkbox" /> 5+ vagas
               </label>
             </div>
           )}
@@ -119,58 +113,31 @@ export default function SearchSecond() {
           {showOptionsStatus && (
             <div className={styles.options_container}>
               <label>
-                <input className={styles.input} type="checkbox" /> 1
+                <input className={styles.input} type="checkbox" /> 1 quarto
               </label>
               <label>
-                <input type="checkbox" /> 2
+                <input type="checkbox" /> 2 quartos
               </label>
               <label>
-                <input type="checkbox" /> 3
+                <input type="checkbox" /> 3 quartos
               </label>
               <label>
-                <input type="checkbox" /> 4
+                <input type="checkbox" /> 4 quartos
               </label>
-              <label>
-                <input type="checkbox" /> +5
+              <label> 
+                <input type="checkbox" /> +5 quartos
               </label>
             </div>
           )}
         </div>
-        <div onMouseLeave={handleMouseLeaveLocation}>
-          <button onClick={handleButtonValue} className={styles.options_button}>
-          <span><Icon path={mdiCurrencyUsd} size={.9} color={'#1919bf'}/></span> Valor aproximado
-          </button>
-          {showValue && (
-            <div className={styles.options_container}>
-              <label>
-                <input type="checkbox" /> Até R$ 1.000.000
-              </label>
-              <label>
-                <input type="checkbox" /> Até R$ 1.500.000
-              </label>
-              <label>
-                <input type="checkbox" /> Até R$ 2.000.000
-              </label>
-              <label>
-                <input type="checkbox" /> Até R$ 2.500.000
-              </label>
-              <label>
-                <input type="checkbox" /> Até R$ 3.500.000
-              </label>
-              <label>
-                <input type="checkbox" /> Até R$ 4.500.000
-              </label>
-              <label>
-                <input type="checkbox" /> Até R$ 6.000.000
-              </label>
-              <label>
-                <input type="checkbox" /> Até R$ 7.500.000
-              </label>
-              <label>
-                <input type="checkbox" /> Acima de R$ 8.000.000
-              </label>
-            </div>
-          )}
+        <div className={styles.options_button}>
+          <Icon path={mdiCurrencyUsd} size={.9} color={'#1919bf'}/>
+          <input
+            type="text"
+            placeholder="Valor aproximado"
+            className={styles.input_value_option}
+            style={{height: '38px'}}
+          />
         </div>
         <div className={`${styles.input_text} ${styles.text_container}`}>
           <Icon path={mdiMagnify} size={1} color={'#1919bf'} className={styles.lupa}/>

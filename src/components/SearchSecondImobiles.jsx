@@ -108,27 +108,27 @@ const SearchSecondImobiles = () => {
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="one" /> 
                   <label htmlFor="one" className="check-box" />
-                  1
+                  1 vaga
                 </div>
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="two" /> 
                   <label htmlFor="two" className="check-box" />
-                  2
+                  2 vagas
                 </div>
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="three" /> 
                   <label htmlFor="three" className="check-box" />
-                  3
+                  3 vagas
                 </div>
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="four" /> 
                   <label htmlFor="four" className="check-box" />
-                  4
+                  4 vagas
                 </div>
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="five" /> 
                   <label htmlFor="five" className="check-box" />
-                  5+
+                  5+ vagas
                 </div>
               </div>
             }
@@ -145,27 +145,27 @@ const SearchSecondImobiles = () => {
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="one" /> 
                   <label htmlFor="one" className="check-box" />
-                  1
+                  1 quarto
                 </div>
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="two" /> 
                   <label htmlFor="two" className="check-box" />
-                  2
+                  2 quartos
                 </div>
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="three" /> 
                   <label htmlFor="three" className="check-box" />
-                  3
+                  3 quartos
                 </div>
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="four" /> 
                   <label htmlFor="four" className="check-box" />
-                  4
+                  4 quartos
                 </div>
                 <div className="checkbox-wrapper-19">
                   <input type="checkbox" id="five" /> 
                   <label htmlFor="five" className="check-box" />
-                  5+
+                  5+ quartos
                 </div>
               </div>
             }
@@ -173,71 +173,24 @@ const SearchSecondImobiles = () => {
             accordionHeader={customAccordionHeader}
             accordionContent={customAccordionContent}
           />
-          <span className={styles.icon_dollar}>
-            <Icon path={mdiCurrencyUsd} size={.9} color={'#1919bf'} />
-          </span>
-          <Accordion title='Valor máximo' 
-            content={
-              <div className={styles.container_input}>
-                <div className="checkbox-wrapper-19">
-                  <input type="checkbox" id="um" /> 
-                  <label htmlFor="um" className="check-box" />
-                  Até R$ 1.000.000
-                </div>
-                <div className="checkbox-wrapper-19">
-                  <input type="checkbox" id="dois" /> 
-                  <label htmlFor="dois" className="check-box" />
-                  Até R$ 1.500.000
-                </div>
-                <div className="checkbox-wrapper-19">
-                  <input type="checkbox" id="tres" /> 
-                  <label htmlFor="tres" className="check-box" />
-                  Até R$ 2.000.000
-                </div>
-                <div className="checkbox-wrapper-19">
-                  <input type="checkbox" id="quatro" /> 
-                  <label htmlFor="quatro" className="check-box" />
-                  Até R$ 2.500.000
-                </div>
-                <div className="checkbox-wrapper-19">
-                  <input type="checkbox" id="cinco" /> 
-                  <label htmlFor="cinco" className="check-box" />
-                  Até R$ 3.500.000
-                </div>
-                <div className="checkbox-wrapper-19">
-                  <input type="checkbox" id="seis" /> 
-                  <label htmlFor="seis" className="check-box" />
-                  Até R$ 4.500.000
-                </div>
-                <div className="checkbox-wrapper-19">
-                  <input type="checkbox" id="sete" /> 
-                  <label htmlFor="sete" className="check-box" />
-                  Até R$ 6.000.000
-                </div>
-                <div className="checkbox-wrapper-19">
-                  <input type="checkbox" id="oito" /> 
-                  <label htmlFor="oito" className="check-box" />
-                  Até R$ 7.500.000
-                </div>
-                <div className="checkbox-wrapper-19">
-                  <input type="checkbox" id="nove" /> 
-                  <label htmlFor="nove" className="check-box" />
-                  Até R$ 8.000.000
-                </div>
-              </div>
-            }
-            accordionContainer={customAccordion}
-            accordionHeader={customAccordionHeader}
-            accordionContent={customAccordionContent}
-          />
+          <div 
+          style={{borderBottom: '1px solid #000', marginTop: '.5rem'}}
+          className={`${styles.input_text} ${styles.text_container_two}`}>
+            <Icon path={mdiCurrencyUsd} size={.9} color={'#1919bf'} className={styles.lupa}/>
+            <input
+                className={styles.input_value_option}
+                type="text"
+                placeholder="Valor máximo"
+            />
+          </div>
           <div className={`${styles.input_text} ${styles.text_container}`}>
-          <Icon path={mdiMagnify} size={1} color={'#1919bf'} className={styles.lupa}/>
-          <input
-              className={`${styles.text_animation} ${typing ? styles.pause_animation : ''}`}
-              type="text"
-              placeholder={words[index]}
-              onChange={handleTyping}
-          />
+            <Icon path={mdiMagnify} size={1} color={'#1919bf'} className={styles.lupa}/>
+            <input
+                className={`${styles.text_animation} ${typing ? styles.pause_animation : ''}`}
+                type="text"
+                placeholder={words[index]}
+                onChange={handleTyping}
+            />
           </div>
           <div className={styles.container_button}>
             <button className={styles.button_close} onClick={toggleExpand}>

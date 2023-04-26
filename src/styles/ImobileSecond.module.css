@@ -64,6 +64,7 @@
   border-radius: .2rem;
   border: none;
   padding: .5rem 4rem;
+  cursor: pointer;
 }
 
 .share {
@@ -78,6 +79,14 @@
   border-radius: .2rem;
   border: none;
   padding: .5rem 4rem;
+  cursor: pointer;
+}
+
+.information:hover, 
+.share:hover {
+  color: #1919bf;
+  background-color: #FFF;
+  border: 2px solid #1919bf;
 }
 
 /* CAROUSEL */
@@ -170,6 +179,7 @@
 .immobile_view p:hover {
   background-color: #FFF;
   color: #1919bf;
+  border: 1px solid #1919bf;
   transition: .5s;
 }
 
