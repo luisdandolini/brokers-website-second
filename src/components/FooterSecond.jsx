@@ -23,10 +23,10 @@ const FooterSecond = () => {
           </div>
         </div>
       </div>
-      <div className={styles.fast}>
+      {/* <div className={styles.fast}>
         <p>Desenvolvido por: </p>
         <img src={LogoFast} alt="" className={styles.logo_fast} />
-      </div>
+      </div> */}
     </footer>
   )
 }
